@@ -1,6 +1,3 @@
-<!-- {% extends "mail/inbox.html" %} -->
-<!-- {% load static %} -->
-
 {% block menubar %}
     <div class="menu-background-mobile">
       <div id="menu1" style="background-image: url({% static '/assets/Backgroup1.png' %});"></div>
@@ -9,10 +6,6 @@
       <div id="menu4" style="background-image: url({% static '/assets/Backgroup4.png' %});"></div>
     </div>
     <menu class="menu">
-    
-      <!-- <menu class="menu"> -->
-      <!-- href="{% static 'mail/styles.css' %}" -->
-      <!-- <button class="btn btn-sm btn-outline-primary" id="inbox">Inbox</button> -->
     
       <a id="inbox">
         <svg id="inbox1" width="40" height="40" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,8 +20,6 @@
         </svg>
       </a>
     
-      <!-- <a id="compose"> -->
-      <!-- <button class="btn btn-sm btn-outline-primary" id="compose">Compose</button> -->
       <a id="archived">
         <svg id="archived1" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -67,6 +58,3 @@
       </a>
     </menu>
 {% endblock menubar %}
-<!-- {% block script %}
-<script src="{% static 'mail/inbox.js' %}"></script>
-{% endblock %} -->
