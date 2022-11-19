@@ -45,7 +45,7 @@ function compose_email() {
     .then(result => {
         // Print result
         console.log(result);
-        alert("Alerta roja");
+        // alert("Alerta roja");
         load_mailbox('sent');
     });
   

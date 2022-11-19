@@ -163,7 +163,6 @@ document.addEventListener("DOMContentLoaded", function () {
         .then((result) => {
           // Print result
           //console.log(result);
-          // alert("Alerta roja");
           load_mailbox("sent", 1, 0, datos_buscados);
         });
 
@@ -282,9 +281,9 @@ function compose_email(reply_data) {
     reply_data.body = `
     
     
-On ${reply_data.timestamp} 
-${reply_data.sender} wrote:
-${reply_data.body}`;
+  On ${reply_data.timestamp} 
+  ${reply_data.sender} wrote:
+  ${reply_data.body}`;
 
     document.querySelector("#compose-recipients").value = reply_data.sender;
     document.querySelector("#compose-subject").value = reply_data.subject;
@@ -325,7 +324,6 @@ ${reply_data.body}`;
       .then((result) => {
         // Print result
         //console.log(result);
-        // alert("Alerta roja");
         load_mailbox("sent", 1, 0, datos_buscados);
       });
 
